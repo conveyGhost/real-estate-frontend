@@ -1,0 +1,111 @@
+{
+  "env": {
+    "test": {
+      "presets": [["env", {"modules": "commonjs"}], "next/babel"],
+      "plugins": [
+        ["lodash"],
+        ["transform-define", "./env-config.js"],
+        ["transform-decorators-legacy"],
+        ["styled-jsx/babel", {"plugins": ["styled-jsx-plugin-postcss"]}],
+        [
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./components",
+              "constants": "./constants",
+              "lib": "./lib",
+              "permissions": "./permissions",
+              "services": "./services",
+              "utils": "./utils"
+            }
+          }
+        ],
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": true
+          }
+        ]
+      ]
+    },
+
+    "development": {
+      "presets": [["env", {"modules": "commonjs"}], "next/babel"],
+      "plugins": [
+        ["lodash"],
+        ["transform-define", "./env-config.js"],
+        ["transform-decorators-legacy"],
+        ["styled-jsx/babel", {"plugins": ["styled-jsx-plugin-postcss"]}],
+        [
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./components",
+              "constants": "./constants",
+              "lib": "./lib",
+              "permissions": "./permissions",
+              "services": "./services",
+              "utils": "./utils"
+            }
+          }
+        ],
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": true
+          }
+        ]
+      ]
+    },
+
+    "production": {
+      "presets": [["env", {"modules": "commonjs"}], "next/babel"],
+      "plugins": [
+        ["lodash"],
+        ["transform-define", "./env-config.js"],
+        ["transform-decorators-legacy"],
+        ["styled-jsx/babel", {"plugins": ["styled-jsx-plugin-postcss"]}],
+        [
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./components",
+              "constants": "./constants",
+              "lib": "./lib",
+              "permissions": "./permissions",
+              "services": "./services",
+              "utils": "./utils"
+            }
+          }
+        ],
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": true
+          }
+        ]
+      ]
+    }
+  }
+}
