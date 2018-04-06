@@ -1,0 +1,21 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.next
+
+# testing
+coverage
+/**/__snapshots__/*
+cypress/videos/*
+
+# production
+build
+/**/*.css
+
+# misc
+.DS_Store
+.env
+sitemap.xml
+npm-debug.log
+package-lock.json
