@@ -1,0 +1,8 @@
+{
+  "projectId": "w9uphs",
+  "baseUrl": "http://localhost:3000/",
+  "videoRecording": false,
+  "env": {
+    "apiUrl": "http://localhost:4000"
+  }
+}
